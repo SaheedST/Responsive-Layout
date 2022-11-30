@@ -1,0 +1,374 @@
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: #2e323f;
+  height: auto;
+  padding: 0.5em 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hamburger__container {
+  
+  cursor: pointer;  
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #e0e0e2;
+  border: none;
+  padding: 0;
+}
+
+.hamburger {
+  width: 50%;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  background-color: #2e323f;
+  height: 2px;
+  margin: 0 auto;
+  display: block;
+}
+
+.hamburger::before {
+  translate: 0 -4px;
+}
+
+.hamburger::after {
+  translate: 0 2px;
+}
+
+.logo {
+  cursor: pointer;
+  height: 1.3em;
+  margin: 0;
+}
+
+.nav {
+  display: none;
+}
+
+.nav__visible {
+    display: block;
+  }
+
+.nav__list {
+  padding: 0;
+}
+
+.nav__item {
+  text-align: center;
+  margin: 0;
+  list-style: none;
+}
+
+.nav__link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #e0e0e2;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  font-size: 0.766rem;
+}
+
+.nav__link--button {
+  padding: 0.2em 0.75em;
+  background-color: #a59678;
+  border-radius: 3em;
+}
+
+section,
+.two__column,
+footer {
+  padding: 2em 0;
+}
+
+.hero {
+  background-color: #3b4050;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.8rem;
+  line-height: 1.16em;
+}
+
+.light__title {
+  color: #fff;
+}
+
+.dark__title {
+  color: #a59678;
+}
+
+.hero__cta {
+  margin-top: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.hero__cta {
+  color: #e0e0e2;
+}
+
+.hero__btn {
+  color: #fff;
+}
+
+.hero__btn {
+  cursor: pointer;
+  background-color: #a59678;
+  border: none;
+  padding: 0.25em 1em;
+  border-radius: 3em;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+}
+
+.section__title {
+  color: #a59678;
+  font-family: "Oswald", sans-serif;
+}
+
+.three__column {
+  background-color: #e0e0e2;
+}
+
+.three__column--title {
+  font-size: 1.28rem;
+  text-align: center;
+}
+
+.three__column--text {
+  font-size: 0.766rem;
+  text-align: center;
+}
+
+.two__column--title {
+  margin: 0;
+  font-size: 1.53rem;
+}
+
+.two__column--text {
+  font-size: 0.9rem;
+}
+
+.main__side--box {
+  background-color: #3b4050;
+  text-align: center;
+  color: #fff;
+  padding: 1em 1.5em;
+  margin-bottom: 1em;
+  font-size: 0.766rem;
+}
+
+.main__side--title {
+  color: white;
+  font-size: 1.28rem;
+}
+
+.footer {
+  background-color: #3b4050;
+  color: #fff;
+}
+
+.footer__title {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.about__company {
+  margin: 2em 0;
+}
+
+.footer__title--sub {
+  font-size: 0.85rem;
+}
+
+.additional__info--text,
+.about__text {
+  font-size: 0.7rem;
+  line-height: 1.5em;
+}
+
+.col ul {
+  padding-left: 0;
+}
+
+.col li {
+  list-style: none;
+  margin-bottom: 1.5em;
+}
+
+.row__mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 700px) {
+  .hamburger__container {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .row__wt_spacing {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+  }
+
+  
+
+  .nav__large {
+    display: flex;
+  }
+
+  .nav__list {
+    margin: 0;
+  }
+
+  .nav__item {
+    margin: 0 0 0 2em;
+  }
+
+  .logo {
+    width: min-content;
+  }
+
+  .hero__cta {
+    align-self: flex-end;
+  }
+
+  .row__wt_spacing--mid {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+  }
+
+  .footer__title {
+    font-size: 3rem;
+  }
+
+  .about__company {
+    width: 30%;
+  }
+
+  .additional__info {
+    width: 55%;
+    margin: 2em 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hamburger__container {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .row__wt_spacing {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .nav__list {
+    margin: 0;
+  }
+
+  .nav__item {
+    margin: 0 0 0 2em;
+  }
+
+  .logo {
+    width: min-content;
+  }
+
+  .hero h1,
+  .hero__cta {
+    align-self: flex-end;
+  }
+
+  .main__content {
+    width: 62%;
+  }
+
+  .main__side {
+    width: 32%;
+  }
+
+  .footer__title {
+    font-size: 3rem;
+  }
+
+  .about__company {
+    width: 30%;
+  }
+
+  .additional__info {
+    width: 55%;
+    margin: 2em 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .row__wt_spacing--large {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+  }
+
+  .row__wt_spacing--mid {
+    display: block;
+  }
+
+  .main__content {
+    width: 62%;
+  }
+
+  .main__side {
+    width: 32%;
+  }
+}
